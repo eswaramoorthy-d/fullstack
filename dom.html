@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="dom.css">
+     <script src="dom.js"></script> 
+</head>
+<body>
+
+    <h1>My Shopping Cart</h1>
+
+    <div class="products">
+
+        <div class="product">
+            <h2>Apple</h2>
+            <p>Price: ₹100</p>
+            <button onclick="addToCart('Apple', 100)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <h2>Milk</h2>
+            <p>Price: ₹50</p>
+            <button onclick="addToCart('Milk', 50)">
+                Add to Cart
+            </button>
+        </div>
+        <div class="product">
+            <h2>Bread</h2>
+            <p>Price: ₹40</p>
+            <button onclick="addToCart('Bread', 40)">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+    <h2>Cart</h2>
+
+    <div id="cart"></div>
+
+    <h3>Total: ₹<span id="total">0</span></h3>
+</body>
+</html>
